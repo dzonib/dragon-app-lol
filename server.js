@@ -7,12 +7,12 @@ const dragon = new Dragon({
 });
 
 
-const dragon3 = new Dragon();
-const dragon4 = new Dragon({
-  birthdate: new Date()
-})
+// const dragon3 = new Dragon();
+// const dragon4 = new Dragon({
+//   birthdate: new Date()
+// })
 
-dragon.log(); 
+// dragon.log(); 
 
 setTimeout(() => { 
   const dragon2 = new Dragon({
@@ -21,6 +21,6 @@ setTimeout(() => {
   dragon2.log();
 }, 2000)
 
-dragon4.log();
+// dragon4.log();
 
-dragon3.log();
+// dragon3.log();
