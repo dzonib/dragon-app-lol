@@ -1,4 +1,4 @@
-const TRAITS = require('./traits');
+const TRAITS = require('../data/traits');
 
 const DEFAULT_PROPERTIES = {
   nickname: 'unnamed',
@@ -14,7 +14,7 @@ const DEFAULT_PROPERTIES = {
 
       const traitValue = traitValues[Math.floor(Math.random() * traitValues.length)];
 
-      traits.push({[traitType]: traitValue})
+      traits.push({traitType, traitValue})
     });
     console.log(traits)
 
@@ -33,9 +33,7 @@ class Dragon {
   log() {
     console.log(`This cool dragon is born at ${this.birthdate}
      and his nick name is ${this.nickname} and his color is 
-     ${this.traits.map(
-       trait => trait.backgroundColor
-     )}
+    
     `);
   }
 }
